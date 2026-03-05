@@ -1,0 +1,5 @@
+# Token Tracker - Python Dependencies
+
+# Session Analyzer 和 Live Monitor 依赖
+
+# 无外部依赖，仅使用 Python 标准库

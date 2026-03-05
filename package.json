@@ -1,0 +1,31 @@
+{
+  "name": "token-tracker",
+  "version": "2.0.0",
+  "description": "Claude Code Token 使用监控和统计工具",
+  "bin": {
+    "monitor": "./monitor.js",
+    "daily-stats": "./daily-stats.js"
+  },
+  "pkg": {
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "dist",
+    "assets": [
+      "data/**/*"
+    ]
+  },
+  "scripts": {
+    "build": "pkg . --out-path dist",
+    "build:monitor": "pkg monitor.js --targets node18-win-x64 --output dist/monitor.exe",
+    "build:stats": "pkg daily-stats.js --targets node18-win-x64 --output dist/daily-stats.exe"
+  },
+  "keywords": [
+    "token",
+    "monitor",
+    "claude",
+    "statistics"
+  ],
+  "author": "luoshanxuli2010@163.com",
+  "license": "MIT"
+}
